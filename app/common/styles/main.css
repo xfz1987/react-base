@@ -1,0 +1,35 @@
+@import url('./neat.css');
+@import url('./test.css');
+:root{
+	--bgColor: yellowgreen;
+	--fontSize: 1rem;
+}
+
+:root{
+	--centered: {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	};
+}
+
+body{
+	background: var(--bgColor);
+	color: blue;
+}
+.h1{
+	transform: translate(100px);
+	& span{
+		color: #fff;
+	}
+	&:hover{
+		color: blue;
+	};
+}
+
+.centered{
+	@apply --centered;
+}
+.testImg{
+	width:200px;height:200px;background: url(../images/test-2x.png);
+}
